@@ -21,7 +21,7 @@ public class DataService {
             userList.add(new Teacher(firstName, secondName, lastName, id));
     }
 
-    private List<User> getStudentList(){
+    public List<User> getStudentList(){
         List<User> result = new ArrayList<>();
         for (User user:userList){
             if (user instanceof Student)
@@ -30,14 +30,14 @@ public class DataService {
         return result;
     }
 
-//    private List<User> getTeacherList(){
-//        List<User> result = new ArrayList<>();
-//        for (User user:userList){
-//            if (user instanceof Teacher)
-//                result.add(user);
-//        }
-//        return result;
-//    }
+    public List<User> getTeacherList(){
+        List<User> result = new ArrayList<>();
+        for (User user:userList){
+            if (user instanceof Teacher)
+                result.add(user);
+        }
+        return result;
+    }
 
 //    private void removeUsers(List<User> users){
 //        if (users.isEmpty())

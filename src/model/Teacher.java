@@ -18,8 +18,8 @@ public class Teacher extends User{
 
     @Override
     public String toString() {
-        return "Teacher{" +
-                "teacherId=" + teacherId +
+        return "Teacher{ " +
+                "teacherId = " + teacherId +
                 super.toString() +
                 '}';
     }
